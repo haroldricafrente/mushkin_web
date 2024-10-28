@@ -29,3 +29,9 @@ function closeAllSubMenus(){
         ul.previousElementSibling.classList.remove('remote')
     })
 }
+
+
+//function drpClick(){
+//    document.getElementById("frame1").style.visibility = "visible";
+//    document.getElementById("frame1").classList.add("style");
+//}

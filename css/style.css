@@ -20,6 +20,10 @@ html {
     line-height: 1.5rem;
 }
 
+main .container > h2 {
+  color: #15BFFD;
+}
+
 body {
     min-height: 100vh;
     min-height: 100dvh;
@@ -164,6 +168,124 @@ main p{
     h2, p { margin-top: 1em; }
 }
 
+.dash-header{
+  color: var(--accent-clr);
+  margin: 30px 0;
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid var(--line-clr);
+  border-radius: 10px;
+  background-color: var(--base-clr);
+  text-align: left;
+  overflow: hidden;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(21, 191, 253, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(21, 191, 253, 0.15);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  }
+
+
+.card .card-header{
+  color: var(--text-clr);
+  margin: 12px 0;
+  padding-bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+.drpdown {
+  display: grid;
+  place-items: center;
+}
+.group-menu {
+  cursor: pointer;
+}
+.dot{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-clr);
+  margin-top: 4px;
+}
+.frame1{
+  visibility: hidden;
+}
+.frame1.chs{
+  font-size: 20px;
+  color: var(--text-clr);
+  border-bottom: 1px solid white;
+  padding: 13px;
+  cursor: pointer;
+}
+.frame1 .chs:hover{
+  background: var(--hover-clr);
+}
+.frame1 .chs span{
+  margin-left: 10px;
+}
+.style{
+  width: 200px;
+  height: 300px;
+  background-color: var(--base-clr);
+  margin-top: 5px;
+  margin-left: -180px;
+  border-radius: 10px;
+}
+*/
+.card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.card .parameter {
+  margin: 0;
+  padding: 0 ;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+  .card .parameter .info{
+    font-size: 15px;
+    list-style: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 800px){
     body{
       grid-template-columns: 1fr;
@@ -235,4 +357,4 @@ main p{
         }
       }
     }
-  }
+}
